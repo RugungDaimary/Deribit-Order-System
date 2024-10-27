@@ -45,7 +45,7 @@ DeribitOrderSystem/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/DeribitOrderSystem.git
+   git clone https://github.com/RugungDaimary/DeribitOrderSystem.git
    cd DeribitOrderSystem
    ```
 
