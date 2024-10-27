@@ -40,7 +40,7 @@ int main()
     std::string buyOrderId = buyResponse["result"]["order"]["order_id"];
 
     // Place a sell order
-    nlohmann::json sellResponse = orderManager.placeSellOrder("BTC-PERPETUAL", 10000, 66000);
+    nlohmann::json sellResponse = orderManager.placeSellOrder("BTC-PERPETUAL", 10000, 100000);
     std::string sellOrderId = sellResponse["result"]["order"]["order_id"];
 
     // Edit an order

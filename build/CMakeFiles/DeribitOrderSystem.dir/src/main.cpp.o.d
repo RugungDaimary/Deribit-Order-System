@@ -1,5 +1,5 @@
 CMakeFiles/DeribitOrderSystem.dir/src/main.cpp.o: \
-  /Users/rugungdaimary/Desktop/Mac/GoQuant/src/main.cpp \
+  /Users/rugungdaimary/Desktop/Mac/DeribitOrder/src/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
@@ -419,8 +419,8 @@ CMakeFiles/DeribitOrderSystem.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/deque \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iomanip \
-  /Users/rugungdaimary/Desktop/Mac/GoQuant/src/DeribitAPI.h \
-  /Users/rugungdaimary/Desktop/Mac/GoQuant/include/nlohmann/json.hpp \
+  /Users/rugungdaimary/Desktop/Mac/DeribitOrder/src/DeribitAPI.h \
+  /Users/rugungdaimary/Desktop/Mac/DeribitOrder/include/nlohmann/json.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/array \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/forward_list \
@@ -438,6 +438,6 @@ CMakeFiles/DeribitOrderSystem.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/clocale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/any \
-  /Users/rugungdaimary/Desktop/Mac/GoQuant/src/OrderManager.h \
-  /Users/rugungdaimary/Desktop/Mac/GoQuant/src/WebSocketServer.h \
+  /Users/rugungdaimary/Desktop/Mac/DeribitOrder/src/OrderManager.h \
+  /Users/rugungdaimary/Desktop/Mac/DeribitOrder/src/WebSocketServer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/set

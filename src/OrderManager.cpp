@@ -1,5 +1,4 @@
 
-
 #include "OrderManager.h"
 #include <iostream>
 
@@ -18,19 +17,18 @@ void OrderManager::authenticate()
     }
 }
 
-
 nlohmann::json OrderManager::placeBuyOrder(const std::string &instrument_name, int amount, double price)
 {
     nlohmann::json response = api.placeBuyOrder(instrument_name, amount, price);
     handleOrderResponse(response, "Buy");
-    return response;
+    return response; // Ensure returning the response JSON
 }
 
 nlohmann::json OrderManager::placeSellOrder(const std::string &instrument_name, int contracts, double price)
 {
     nlohmann::json response = api.placeSellOrder(instrument_name, contracts, price);
     handleOrderResponse(response, "Sell");
-    return response;
+    return response; // Ensure returning the response JSON
 }
 
 void OrderManager::editOrder(const std::string &order_id, int amount, double price)
@@ -68,7 +66,7 @@ nlohmann::json OrderManager::getOrderbook(const std::string &instrument_name)
     {
         std::cout << "Orderbook: " << response.dump(4) << std::endl;
     }
-    return response;
+    return response; // Ensure returning the response JSON
 }
 
 nlohmann::json OrderManager::getCurrentPositions()
@@ -82,5 +80,5 @@ nlohmann::json OrderManager::getCurrentPositions()
     {
         std::cout << "Current Positions: " << response.dump(4) << std::endl;
     }
-    return response;
+    return response; // Ensure returning the response JSON
 }

@@ -1,3 +1,3 @@
-/Users/rugungdaimary/Desktop/Mac/GoQuant/build/CMakeFiles/DeribitOrderSystem.dir
-/Users/rugungdaimary/Desktop/Mac/GoQuant/build/CMakeFiles/edit_cache.dir
-/Users/rugungdaimary/Desktop/Mac/GoQuant/build/CMakeFiles/rebuild_cache.dir
+/Users/rugungdaimary/Desktop/Mac/DeribitOrder/build/CMakeFiles/DeribitOrderSystem.dir
+/Users/rugungdaimary/Desktop/Mac/DeribitOrder/build/CMakeFiles/edit_cache.dir
+/Users/rugungdaimary/Desktop/Mac/DeribitOrder/build/CMakeFiles/rebuild_cache.dir

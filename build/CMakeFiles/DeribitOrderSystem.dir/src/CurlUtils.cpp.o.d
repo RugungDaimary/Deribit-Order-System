@@ -1,6 +1,6 @@
 CMakeFiles/DeribitOrderSystem.dir/src/CurlUtils.cpp.o: \
-  /Users/rugungdaimary/Desktop/Mac/GoQuant/src/CurlUtils.cpp \
-  /Users/rugungdaimary/Desktop/Mac/GoQuant/src/CurlUtils.h \
+  /Users/rugungdaimary/Desktop/Mac/DeribitOrder/src/CurlUtils.cpp \
+  /Users/rugungdaimary/Desktop/Mac/DeribitOrder/src/CurlUtils.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \

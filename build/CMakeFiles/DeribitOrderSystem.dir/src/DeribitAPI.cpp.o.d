@@ -1,6 +1,6 @@
 CMakeFiles/DeribitOrderSystem.dir/src/DeribitAPI.cpp.o: \
-  /Users/rugungdaimary/Desktop/Mac/GoQuant/src/DeribitAPI.cpp \
-  /Users/rugungdaimary/Desktop/Mac/GoQuant/src/DeribitAPI.h \
+  /Users/rugungdaimary/Desktop/Mac/DeribitOrder/src/DeribitAPI.cpp \
+  /Users/rugungdaimary/Desktop/Mac/DeribitOrder/src/DeribitAPI.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
@@ -359,7 +359,7 @@ CMakeFiles/DeribitOrderSystem.dir/src/DeribitAPI.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_wctrans_t.h \
-  /Users/rugungdaimary/Desktop/Mac/GoQuant/include/nlohmann/json.hpp \
+  /Users/rugungdaimary/Desktop/Mac/DeribitOrder/include/nlohmann/json.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
@@ -436,5 +436,5 @@ CMakeFiles/DeribitOrderSystem.dir/src/DeribitAPI.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/clocale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/any \
-  /Users/rugungdaimary/Desktop/Mac/GoQuant/src/CurlUtils.h \
+  /Users/rugungdaimary/Desktop/Mac/DeribitOrder/src/CurlUtils.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream

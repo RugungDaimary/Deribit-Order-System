@@ -34,7 +34,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CMake.app/Contents/share/cmake-3.30/Modules/Platform/Darwin.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.30/Modules/Platform/UnixPaths.cmake"
   "/Applications/CMake.app/Contents/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake"
-  "/Users/rugungdaimary/Desktop/Mac/GoQuant/CMakeLists.txt"
+  "/Users/rugungdaimary/Desktop/Mac/DeribitOrder/CMakeLists.txt"
   "CMakeFiles/3.30.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeSystem.cmake"
