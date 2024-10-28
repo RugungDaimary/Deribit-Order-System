@@ -136,6 +136,9 @@ The application will authenticate, place a buy and a sell order, edit an existin
      - `webSocketServer.startServer()`
      - `webSocketServer.subscribe("BTC-PERPETUAL")`
    - **Purpose**: Initializes the WebSocket server and subscribes to an instrument for real-time updates.
+   - **Method**: 
+     - `webSocketServer.notifyClients(const nlohmann::json &orderbook_data)`
+   - **Purpose**: Notifies all subscribed clients about updates to the order book for specific instruments.
 
 ## API Methods Used
 
