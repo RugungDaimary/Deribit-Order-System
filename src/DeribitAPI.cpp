@@ -36,25 +36,6 @@ nlohmann::json DeribitAPI::placeBuyOrder(const std::string &instrument_name, int
     return sendRequest("https://test.deribit.com/api/v2/private/buy", request);
 }
 
-
-// nlohmann::json DeribitAPI::placeSellOrder(const std::string &instrument_name, int amount, double price)
-// {
-//     // Ensure amount is a multiple of the contract size (e.g., 10)
-//     if (amount % 10 != 0)
-//     {
-//         std::cerr << "Sell Order Error: Amount must be a multiple of 10 for " << instrument_name << std::endl;
-//         return {{"error", "Amount must be a multiple of contract size"}};
-//     }
-
-//     nlohmann::json request = {
-//         {"method", "private/sell"},
-//         {"params", {{"instrument_name", instrument_name}, {"amount", amount}, {"price", price}}},
-//         {"jsonrpc", "2.0"},
-//         {"id", 6}};
-
-//     return sendRequest("https://test.deribit.com/api/v2/private/sell", request);
-// }
-
 nlohmann::json DeribitAPI::placeSellOrder(const std::string &instrument_name, int amount, double price)
 {
     // Ensure amount is a multiple of the contract size (e.g., 10)

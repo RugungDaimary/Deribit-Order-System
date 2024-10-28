@@ -20,7 +20,6 @@ public:
     void cancelOrder(const std::string &order_id);
 
 
-
     nlohmann::json getOrderbook(const std::string &instrument_name);
     nlohmann::json getCurrentPositions();
 

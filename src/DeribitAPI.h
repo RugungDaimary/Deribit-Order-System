@@ -16,8 +16,6 @@ public:
     nlohmann::json editOrder(const std::string &order_id, int amount, double price);
     nlohmann::json cancelOrder(const std::string &order_id);
     nlohmann::json getOrderStatus(const std::string &order_id);
-
-    // New methods
     nlohmann::json getOrderbook(const std::string &instrument_name);
     nlohmann::json getCurrentPositions();
 

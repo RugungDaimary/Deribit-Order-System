@@ -28,29 +28,47 @@ int main()
 
     // Authenticate before placing orders
     orderManager.authenticate();
-    
+
+
     // Fetch order book
-    orderManager.getOrderbook("BTC-PERPETUAL");
+    // orderManager.getOrderbook("BTC-PERPETUAL");
 
     // Fetch current positions
-    orderManager.getCurrentPositions();
+    // orderManager.getCurrentPositions();
+
+
 
     // Place a buy order
     nlohmann::json buyResponse = orderManager.placeBuyOrder("BTC-PERPETUAL", 1000, 50000);
     std::string buyOrderId = buyResponse["result"]["order"]["order_id"];
 
+
     // Place a sell order
     nlohmann::json sellResponse = orderManager.placeSellOrder("BTC-PERPETUAL", 10000, 100000);
     std::string sellOrderId = sellResponse["result"]["order"]["order_id"];
 
+
+ 
     // Edit an order
-    orderManager.editOrder(buyOrderId, 100000, 51000);
+    // orderManager.editOrder(buyOrderId, 100000, 70000);
+    // orderManager.editOrder("29218455181", 100000, 70000);
+
+
 
     // Cancel the buy order
-    orderManager.cancelOrder(buyOrderId);
+    // orderManager.cancelOrder(buyOrderId);
+    // orderManager.cancelOrder("29218768118");
+
+
 
     // Cancel the sell order
-    orderManager.cancelOrder(sellOrderId);
+    // orderManager.cancelOrder(sellOrderId);
+
+
+
+
+
+
 
     // Start the WebSocket server
     webSocketServer.startServer();
@@ -63,6 +81,8 @@ int main()
         {"symbol", "BTC-PERPETUAL"},
         {"bids", {{50000, 1}, {49950, 2}}},
         {"asks", {{50100, 1}, {50200, 3}}}};
+
+
     webSocketServer.notifyClients(orderbook_data);
 
     return 0;
