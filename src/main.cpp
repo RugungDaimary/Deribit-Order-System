@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <thread>
 #include "DeribitAPI.h"
 #include "OrderManager.h"
 #include "WebSocketServer.h"
@@ -30,6 +31,30 @@ int main()
     orderManager.authenticate();
 
 
+    // Place a buy order
+    // nlohmann::json buyResponse = orderManager.placeBuyOrder("BTC-PERPETUAL", 1000, 50000);
+    // std::string buyOrderId = buyResponse["result"]["order"]["order_id"];
+
+
+    // Place a sell order.
+    // nlohmann::json sellResponse = orderManager.placeSellOrder("BTC-PERPETUAL", 10000, 100000);
+    // std::string sellOrderId = sellResponse["result"]["order"]["order_id"];
+
+
+ 
+    // Edit an order
+    // orderManager.editOrder(buyOrderId, 100000, 70000);
+    // orderManager.editOrder("29226282800", 100000, 70000);
+
+    // Cancel the buy order
+    // orderManager.cancelOrder(buyOrderId);
+    // orderManager.cancelOrder("29226282800");
+
+    // Cancel the sell order
+    // orderManager.cancelOrder(sellOrderId);
+
+
+
     // Fetch order book
     // orderManager.getOrderbook("BTC-PERPETUAL");
 
@@ -38,43 +63,17 @@ int main()
 
 
 
-    // Place a buy order
-    nlohmann::json buyResponse = orderManager.placeBuyOrder("BTC-PERPETUAL", 1000, 50000);
-    std::string buyOrderId = buyResponse["result"]["order"]["order_id"];
-
-
-    // Place a sell order
-    nlohmann::json sellResponse = orderManager.placeSellOrder("BTC-PERPETUAL", 10000, 100000);
-    std::string sellOrderId = sellResponse["result"]["order"]["order_id"];
-
-
- 
-    // Edit an order
-    // orderManager.editOrder(buyOrderId, 100000, 70000);
-    // orderManager.editOrder("29218455181", 100000, 70000);
-
-
-
-    // Cancel the buy order
-    // orderManager.cancelOrder(buyOrderId);
-    // orderManager.cancelOrder("29218768118");
-
-
-
-    // Cancel the sell order
-    // orderManager.cancelOrder(sellOrderId);
-
-
-
-
-
 
 
     // Start the WebSocket server
     webSocketServer.startServer();
 
+
+
     // Subscribe to an instrument
     webSocketServer.subscribe("BTC-PERPETUAL");
+
+
 
     // Simulate orderbook data updates (replace with actual data)
     nlohmann::json orderbook_data = {
@@ -84,6 +83,8 @@ int main()
 
 
     webSocketServer.notifyClients(orderbook_data);
+
+
 
     return 0;
 }

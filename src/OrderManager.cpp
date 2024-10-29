@@ -43,17 +43,6 @@ void OrderManager::cancelOrder(const std::string &order_id)
     handleOrderResponse(response, "Cancel");
 }
 
-void OrderManager::handleOrderResponse(const nlohmann::json &response, const std::string &action)
-{
-    if (response.contains("error"))
-    {
-        std::cerr << action << " Order Error: " << response["error"].dump(4) << std::endl;
-    }
-    else
-    {
-        std::cout << action << " Order Successful: " << response.dump(4) << std::endl;
-    }
-}
 
 nlohmann::json OrderManager::getOrderbook(const std::string &instrument_name)
 {
@@ -81,4 +70,16 @@ nlohmann::json OrderManager::getCurrentPositions()
         std::cout << "Current Positions: " << response.dump(4) << std::endl;
     }
     return response; // Ensure returning the response JSON
+}
+
+void OrderManager::handleOrderResponse(const nlohmann::json &response, const std::string &action)
+{
+    if (response.contains("error"))
+    {
+        std::cerr << action << " Order Error: " << response["error"].dump(4) << std::endl;
+    }
+    else
+    {
+        std::cout << action << " Order Successful: " << response.dump(4) << std::endl;
+    }
 }

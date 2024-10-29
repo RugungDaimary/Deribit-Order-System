@@ -73,7 +73,7 @@ nlohmann::json DeribitAPI::placeSellOrder(const std::string &instrument_name, in
 
 nlohmann::json DeribitAPI::editOrder(const std::string &order_id, int amount, double price)
 {
-    // Optionally, verify the order state before editing
+
     nlohmann::json order_status = getOrderStatus(order_id);
     if (order_status.contains("error"))
     {
@@ -113,21 +113,6 @@ nlohmann::json DeribitAPI::cancelOrder(const std::string &order_id)
     return sendRequest("https://test.deribit.com/api/v2/private/cancel", request);
 }
 
-nlohmann::json DeribitAPI::sendRequest(const std::string &url, const nlohmann::json &request_body)
-{
-    std::string auth_header = "Authorization: Bearer " + access_token;
-    std::string response = CurlUtils::postRequest(url, request_body.dump(), auth_header);
-
-    try
-    {
-        return nlohmann::json::parse(response);
-    }
-    catch (const nlohmann::json::parse_error &e)
-    {
-        std::cerr << "JSON Parse Error: " << e.what() << std::endl;
-        return {{"error", "json_parse_error"}};
-    }
-}
 
 nlohmann::json DeribitAPI::getOrderbook(const std::string &instrument_name)
 {
@@ -149,4 +134,20 @@ nlohmann::json DeribitAPI::getCurrentPositions()
         {"id", 8}};
 
     return sendRequest("https://test.deribit.com/api/v2/private/get_positions", request);
+}
+
+nlohmann::json DeribitAPI::sendRequest(const std::string &url, const nlohmann::json &request_body)
+{
+    std::string auth_header = "Authorization: Bearer " + access_token;
+    std::string response = CurlUtils::postRequest(url, request_body.dump(), auth_header);
+
+    try
+    {
+        return nlohmann::json::parse(response);
+    }
+    catch (const nlohmann::json::parse_error &e)
+    {
+        std::cerr << "JSON Parse Error: " << e.what() << std::endl;
+        return {{"error", "json_parse_error"}};
+    }
 }
